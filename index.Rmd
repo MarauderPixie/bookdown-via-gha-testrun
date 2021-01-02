@@ -1,0 +1,35 @@
+--- 
+title: "Testrun"
+author: "APEX IS ONE"
+date: "last rendered at: `r format(Sys.time(), tz = 'Europe/Berlin')`"
+site: bookdown::bookdown_site
+output:
+  bookdown::gitbook:
+    highlight: kate
+    fig_caption: TRUE
+    split_by: "section"
+    config:
+      toc:
+        collapse: section
+        scroll_highlight: yes
+      download: ["epub", "pdf"]
+  bookdown::epub_book: default
+  bookdown::pdf_book: 
+    latex_engine: xelatex
+    dev: "cairo_pdf"
+    highlight: kate
+documentclass: scrbook
+bibliography: []
+biblio-style: apalike
+link-citations: yes
+description: "Behold this contraption of awe and wonder!"
+github-repo: "MarauderPixie/bookdown-via-gha-testrun"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# R Markdown
+
+This only a test...
